@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        TelegramApiBridge bridge = new TelegramApiBridge("149.154.167.40:443", 192401, "1f347e315165f1c65a229f7106feae6a");
+        TelegramApiBridge bridge = new TelegramApiBridge("149.154.167.50:443",84913,"6eca7eaa77004dd6036e8bcd9446e490");
         System.out.println("Введите свой номер телефона");
         AuthCheckedPhone authCheckedPhone = bridge.authCheckPhone(bufferedReader.readLine().trim());
         System.out.println(authCheckedPhone.isRegistered());
